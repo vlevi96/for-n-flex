@@ -49,6 +49,13 @@ button, input, textarea, select {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-
 }
+/*
+primary axis by default row (alapértelmezetten: flex-direction: row) aka. vízszintes aka. horizontális  aka x tengely
+secondary axis by default column aka. függőleges aka. vertikális aka y tengely
+
+viszont ha azt mondjuk, hogy flex-direction: column; akkor megfordul és 
+column aka. függőleges aka. vertikális aka. y tengely lesz a primary
+és a
+row aka. vízszintes aka. horizontális aka. x tengely lesz a secondary
+*/
