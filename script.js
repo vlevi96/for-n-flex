@@ -36,11 +36,20 @@ function loadEvent() {
     */
 
     const root=document.getElementById("root");
-    const list=generateArray("6");
+
+    root.insertAdjacentHTML("beforeend",`<div id="cards"></div>`);
+    const cards=document.getElementById("cards");
+
+    root.insertAdjacentHTML("beforeend",`<div id="tools"></div>`);
+    const tools=document.getElementById("tools");
+
+    const list=generateArray("20");
     console.log(list);
     if (list[0]!=="Error") {
+        tools.insertAdjacentHTML("afterbegin",`<input placeholder="Írd ide a számokat.">`)
+
         for (const item of list) {
-            root.insertAdjacentHTML("beforeend", `<div>${item}</div>`)
+            cards.insertAdjacentHTML("beforeend", `<div>${item}</div>`)
         }
     }
 
